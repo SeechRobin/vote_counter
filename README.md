@@ -1,6 +1,6 @@
 # VOTE COUNTER
 
----
+
 ## Requirements
 
 * Node
