@@ -42,7 +42,7 @@ router.post('/', function (req, res) {
                         //Update Candidate votes
                         Candidate.findByIdAndUpdate(req.body.candidate,  { votes: currentVotes }, function (err, candidate) {
                             if (err) return res.status(500).send("There was a problem updating the candidate.");
-                            res.status(200).send("Updated Votes");
+                            res.status(201).send("Updated Votes");
                         });
 
                         currentVotes = 0;
